@@ -1,0 +1,33 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.woo-free-sample-button{
+    margin-left: 20px;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    background-color: #333333;
+    border-color: #333333;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.6180469716em 1.41575em;
+    text-decoration: none;
+    font-weight: 600;
+    text-shadow: none;
+    display: inline-block;
+    -webkit-appearance: none;
+}
+
+.woo-free-sample-button:hover{
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .woo-free-sample-button {
+        margin: 20px 0;
+    }  
+}

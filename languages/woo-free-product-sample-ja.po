@@ -1,0 +1,224 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2020-05-04 15:58+0000\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"PO-Revision-Date: 2020-05-09 10:42+0600\n"
+"X-Generator: Poedit 2.3\n"
+"Project-Id-Version: AmplifyPlugins\n"
+"Language-Team: 日本語\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language: ja\n"
+"X-Poedit-KeywordsList: ;__;_e;_x;_ex;-n;_nx;_n_noop;_nx_noop;"
+"_translate_nooped_plural;esc_html_e;esc_html__;esc_html_x;esc_attr__;"
+"esc_attr_e;esc_attr_x;number_format_i18n;date_i18n\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.3.3; wp-5.4.1\n"
+
+#: woo-free-product-sample.php:87
+msgid "Go PRO"
+msgstr "プロに行く"
+
+#: woo-free-product-sample.php:88
+msgid "Configure"
+msgstr "構成、設定"
+
+#: woo-free-product-sample.php:89
+msgid "Docs"
+msgstr "文書"
+
+#: woo-free-product-sample.php:90
+msgid "Support"
+msgstr "サポート"
+
+#: woo-free-product-sample.php:91
+msgid "Review"
+msgstr "レビュー"
+
+#: admin/class-woo-free-product-sample-admin.php:101
+#: admin/class-woo-free-product-sample-admin.php:102
+msgid "Product Sample"
+msgstr "製品サンプル"
+
+#: admin/class-woo-free-product-sample-admin.php:163
+#: admin/class-woo-free-product-sample-admin.php:171
+msgid "Submit a topic"
+msgstr "トピックを提出する"
+
+#: admin/class-woo-free-product-sample-admin.php:173
+msgid "Submit a ticket"
+msgstr "チケットを提出する"
+
+#: public/class-woo-free-product-sample-public.php:93
+msgid "Order a Free Sample"
+msgstr "無料サンプルを注文する"
+
+#: public/class-woo-free-product-sample-public.php:454
+#: public/class-woo-free-product-sample-public.php:464
+msgid " quantity per order."
+msgstr " 注文あたりの数量."
+
+#: public/class-woo-free-product-sample-public.php:490
+#, php-format
+msgid "Sample - \"%s\" have been added to your cart."
+msgstr ""
+
+#: public/class-woo-free-product-sample-public.php:509
+#: public/partials/woocommerce/cart/mini-cart.php:62
+msgid "Sample - "
+msgstr "サンプル - "
+
+#: public/class-woo-free-product-sample-public.php:549
+msgid "  per order."
+msgstr " 注文ごと。"
+
+#: admin/includes/class-woo-free-product-sample-settings.php:36
+msgid "Button Label"
+msgstr "ボタンラベル"
+
+#: admin/includes/class-woo-free-product-sample-settings.php:39
+#: admin/includes/class-woo-free-product-sample-settings.php:40
+msgid "Set button label"
+msgstr "ボタンのラベルを設定する"
+
+#: admin/includes/class-woo-free-product-sample-settings.php:44
+#: admin/includes/class-woo-free-product-sample-settings.php:47
+msgid "Maximum limit type"
+msgstr "上限タイプ"
+
+#: admin/includes/class-woo-free-product-sample-settings.php:55
+#: admin/includes/class-woo-free-product-sample-settings.php:58
+msgid "Maximum quantity per order"
+msgstr "注文あたりの最大数量"
+
+#: admin/partials/woo-free-product-sample-settings.php:64
+#: admin/partials/woo-free-product-sample-settings.php:104
+msgid "Upgrade to"
+msgstr "へのアップグレード"
+
+#: admin/partials/woo-free-product-sample-settings.php:64
+#: admin/partials/woo-free-product-sample-settings.php:104
+msgid "Premium Now!"
+msgstr "今すぐプレミアム！"
+
+#: admin/partials/woo-free-product-sample-settings.php:66
+#: admin/partials/woo-free-product-sample-settings.php:106
+msgid "For only"
+msgstr "のみ"
+
+#: admin/partials/woo-free-product-sample-settings.php:66
+msgid "$29.00"
+msgstr ""
+
+#: admin/partials/woo-free-product-sample-settings.php:66
+#: admin/partials/woo-free-product-sample-settings.php:106
+msgid "per site"
+msgstr "サイトごと"
+
+#: admin/partials/woo-free-product-sample-settings.php:69
+#: admin/partials/woo-free-product-sample-settings.php:108
+msgid "Elevate Your WooCommerce Stores"
+msgstr "WooCommerceストアを昇格させる"
+
+#: admin/partials/woo-free-product-sample-settings.php:69
+#: admin/partials/woo-free-product-sample-settings.php:108
+msgid ""
+"with our\n"
+"                                    light, fast and feature-rich plugins."
+msgstr ""
+
+#: admin/partials/woo-free-product-sample-settings.php:73
+#: admin/partials/woo-free-product-sample-settings.php:112
+msgid "Upgrade Now"
+msgstr "今すぐアップグレード"
+
+#: admin/partials/woo-free-product-sample-settings.php:78
+msgid "Premium Features"
+msgstr "プレミアム機能"
+
+#: admin/partials/woo-free-product-sample-settings.php:81
+#: admin/partials/woo-free-product-sample-settings.php:120
+msgid "Display the button for global."
+msgstr "グローバル用のボタンを表示します。"
+
+#: admin/partials/woo-free-product-sample-settings.php:84
+#: admin/partials/woo-free-product-sample-settings.php:123
+msgid "Conditional logic"
+msgstr "条件付きロジック"
+
+#: admin/partials/woo-free-product-sample-settings.php:84
+#: admin/partials/woo-free-product-sample-settings.php:123
+msgid "Exclude products capability if don’t need."
+msgstr "必要がなければ、製品機能を除外します。"
+
+#: admin/partials/woo-free-product-sample-settings.php:87
+#: admin/partials/woo-free-product-sample-settings.php:126
+msgid "Sample price"
+msgstr "サンプル価格"
+
+#: admin/partials/woo-free-product-sample-settings.php:87
+#: admin/partials/woo-free-product-sample-settings.php:126
+msgid "Set custom price for sample products."
+msgstr "サンプル製品のカスタム価格を設定します。"
+
+#: admin/partials/woo-free-product-sample-settings.php:90
+#: admin/partials/woo-free-product-sample-settings.php:129
+msgid "Custom shipping class & tax rules"
+msgstr "カスタムの配送クラスと税のルール"
+
+#: admin/partials/woo-free-product-sample-settings.php:90
+#: admin/partials/woo-free-product-sample-settings.php:129
+msgid "Set shipping class & tax rule for the sample products."
+msgstr "サンプル商品の配送クラスと税のルールを設定します。"
+
+#: admin/partials/woo-free-product-sample-settings.php:93
+#: admin/partials/woo-free-product-sample-settings.php:132
+msgid "Custom SKU"
+msgstr "カスタムSKU"
+
+#: admin/partials/woo-free-product-sample-settings.php:93
+#: admin/partials/woo-free-product-sample-settings.php:132
+msgid "Set custom SKU for sample products."
+msgstr "サンプル製品のカスタムSKUを設定します。"
+
+#: admin/partials/woo-free-product-sample-settings.php:106
+msgid "$29"
+msgstr ""
+
+#: admin/partials/woo-free-product-sample-settings.php:138
+msgid "Dedicated Support Team"
+msgstr "専任サポートチーム"
+
+#: admin/partials/woo-free-product-sample-settings.php:139
+msgid "We are available round the clock for any support."
+msgstr "24時間体制でサポートをご利用いただけます。"
+
+#: admin/includes/fields/multi-select.php:3
+msgid "Select products"
+msgstr "製品を選択"
+
+#. Name of the plugin
+msgid "Free Product Sample for WooCommerce"
+msgstr "WooCommerceの無料製品サンプル"
+
+#. Description of the plugin
+msgid ""
+"Display an add to cart button in the product detail page to order product as "
+"free sample."
+msgstr ""
+"製品の詳細ページに[カートに追加]ボタンを表示して、製品を無料サンプルとして注"
+"文します。"
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/woo-free-product-sample"
+msgstr ""
+
+#. Author of the plugin
+msgid "Amplify Plugins"
+msgstr "Amplify Plugins"
+
+#. Author URI of the plugin
+msgid "https://amplifyplugins.com"
+msgstr ""

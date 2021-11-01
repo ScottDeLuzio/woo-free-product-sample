@@ -1,0 +1,229 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Language: \n"
+"POT-Creation-Date: 2020-12-25 15:45+0000\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: public/class-woo-free-product-sample-public.php:470
+msgid "  注文ごと。"
+msgstr ""
+
+#: public/class-woo-free-product-sample-public.php:426
+#: public/class-woo-free-product-sample-public.php:437
+msgid " quantity per order."
+msgstr ""
+
+#: public/class-woo-free-product-sample-public.php:424
+#: public/class-woo-free-product-sample-public.php:435
+#: public/class-woo-free-product-sample-public.php:487
+msgid " 注文あたりの数量。"
+msgstr ""
+
+#: public/class-woo-free-product-sample-public.php:474
+#: public/class-woo-free-product-sample-public.php:490
+#, php-format
+msgid "%1$s."
+msgstr ""
+
+#: admin/includes/fields/double-repeater.php:34
+msgid "Add Sample Price"
+msgstr ""
+
+#: admin/includes/fields/multi-select.php:3
+msgid "All"
+msgstr ""
+
+#: admin/includes/class-woo-free-product-sample-settings.php:46
+msgid "Button Label"
+msgstr ""
+
+#: admin/partials/footer.php:42
+msgid "Contact Us"
+msgstr ""
+
+#: admin/includes/class-woo-free-product-sample-settings.php:54
+msgid "Disable Maximum Limit"
+msgstr ""
+
+#: admin/includes/class-woo-free-product-sample-settings.php:57
+msgid "Disable maximum order limit validation"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Display an add to cart button in the product detail page to order product as "
+"free sample."
+msgstr ""
+
+#: woo-free-product-sample.php:93
+msgid "Docs"
+msgstr ""
+
+#: admin/partials/footer.php:8 admin/partials/footer.php:14
+msgid "Documentation"
+msgstr ""
+
+#. Name of the plugin
+msgid "Free Product Sample for WooCommerce"
+msgstr ""
+
+#: admin/class-woo-free-product-sample-admin.php:193
+msgid "Get help"
+msgstr ""
+
+#: woo-free-product-sample.php:95
+msgid "Get Pro"
+msgstr ""
+
+#: admin/partials/footer.php:12
+msgid ""
+"Get started by spending some time with the documentation to get familiar "
+"with this plugin. Build awesome websites for you or your clients with ease."
+msgstr ""
+
+#: admin/partials/footer.php:50
+msgid "Give Review"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://amplifyplugins.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/woo-free-product-sample"
+msgstr ""
+
+#: admin/partials/footer.php:56
+msgid "Leave a Review"
+msgstr ""
+
+#: admin/partials/sidebar.php:7
+msgid "Manage License"
+msgstr ""
+
+#: admin/includes/class-woo-free-product-sample-settings.php:61
+#: admin/includes/class-woo-free-product-sample-settings.php:64
+msgid "Maximum Limit Type"
+msgstr ""
+
+#: admin/includes/class-woo-free-product-sample-settings.php:171
+msgid "Maximum quantity message"
+msgstr ""
+
+#: admin/includes/class-woo-free-product-sample-settings.php:74
+#: admin/includes/class-woo-free-product-sample-settings.php:77
+msgid "Maximum Quantity Per Order"
+msgstr ""
+
+#: admin/includes/class-woo-free-product-sample-settings.php:163
+#: admin/includes/class-woo-free-product-sample-settings.php:167
+msgid "Message"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mohiuddin Abdul Kader"
+msgstr ""
+
+#: admin/partials/footer.php:36
+msgid "Need Help?"
+msgstr ""
+
+#: includes/class-woo-free-product-sample-helper.php:165
+msgid "Order a Free Sample"
+msgstr ""
+
+#: admin/class-woo-free-product-sample-admin.php:194
+msgid "Plugin Homepage"
+msgstr ""
+
+#: admin/includes/fields/double-repeater.php:11
+#: admin/includes/fields/double-repeater.php:20
+msgid "Price"
+msgstr ""
+
+#: admin/partials/woo-free-product-sample-settings.php:81
+msgid "Pro"
+msgstr ""
+
+#: admin/class-woo-free-product-sample-admin.php:110
+#: admin/class-woo-free-product-sample-admin.php:111
+msgid "Product Sample"
+msgstr ""
+
+#: admin/includes/fields/double-repeater.php:10
+#: admin/includes/fields/double-repeater.php:19
+msgid "Quantity"
+msgstr ""
+
+#: admin/class-woo-free-product-sample-admin.php:195
+msgid "Rate the plugin"
+msgstr ""
+
+#: admin/class-woo-free-product-sample-admin.php:195
+msgid "Rate the plugin ★★★★★"
+msgstr ""
+
+#: admin/partials/footer.php:22 admin/partials/footer.php:28
+msgid "Report a Bug"
+msgstr ""
+
+#: public/class-woo-free-product-sample-public.php:325
+msgid "Sample"
+msgstr ""
+
+#: public/class-woo-free-product-sample-public.php:521
+#: public/class-woo-free-product-sample-public.php:558
+#: public/partials/woocommerce/order/order-details-item.php:45
+#: public/partials/woocommerce/cart/mini-cart.php:66
+msgid "Sample - "
+msgstr ""
+
+#: admin/includes/class-woo-free-product-sample-settings.php:49
+#: admin/includes/class-woo-free-product-sample-settings.php:50
+msgid "Set Button Label"
+msgstr ""
+
+#: woo-free-product-sample.php:92
+#: admin/includes/class-woo-free-product-sample-settings.php:38
+#: admin/includes/class-woo-free-product-sample-settings.php:42
+msgid "Settings"
+msgstr ""
+
+#: admin/partials/footer.php:40
+msgid "Stuck with something? Get help from live chat or support ticket."
+msgstr ""
+
+#: admin/class-woo-free-product-sample-admin.php:193
+msgid "Support"
+msgstr ""
+
+#: admin/partials/sidebar.php:9
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: admin/partials/footer.php:54
+msgid ""
+"We love to have you in Free Product Sample for WooCommerce family. We are "
+"making it more awesome everyday. Take your 2 minutes to review the plugin "
+"and spread the love to encourage us to keep it going."
+msgstr ""
+
+#: admin/partials/footer.php:26
+msgid ""
+"You can contribute to make this plugin better reporting bugs, creating "
+"issues and request for a new feature at Github."
+msgstr ""
+
+#: admin/includes/class-woo-free-product-sample-settings.php:174
+msgid "{product} and {qty} for dynamic content."
+msgstr ""
+
+#: public/class-woo-free-product-sample-public.php:519
+#: public/class-woo-free-product-sample-public.php:556
+#: public/partials/woocommerce/order/order-details-item.php:43
+#: public/partials/woocommerce/cart/mini-cart.php:64
+msgid "サンプル - "
+msgstr ""

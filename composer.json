@@ -1,0 +1,11 @@
+{
+    "name": "woo-free-product-sample/woo-free-product-sample-plugin",
+    "description": "Display an add to cart button in the product detail page to order product as free sample.",
+    "type": "project",
+    "license": "GPL",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\": "./includes"}
+    }
+}

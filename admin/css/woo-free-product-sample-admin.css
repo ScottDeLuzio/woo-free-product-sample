@@ -1,0 +1,1214 @@
+/*------------------------------------------------------
+                Start New Style
+--------------------------------------------------------*/
+/*-----Start checkbox------*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border-radius:100%;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius:20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius:20px;
+}
+
+input:checked + .slider {
+    background-color: #437dfe;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #437dfe;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/*------End checkbox*/
+
+/*------Start select option-----*/
+
+.wfps_settings{
+    padding: 15px;
+}
+
+.wfps_settings .wfps_inside select{
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    margin-top: 0;
+    font-size: 15px;
+    color: #576880;
+    padding: 5px 15px;
+}
+
+.wfps_settings .wfps_inside .widefat{
+    width: 50%;
+}
+
+/*------End select option-----*/
+
+.wfps_setting_tab_menu{
+    margin: 20px 0;
+    margin-bottom: 35px;
+}
+
+.wfps_setting_tab_menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.wfps_setting_tab_menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.wfps_setting_tab_menu ul li a{
+    text-decoration: none;
+    color: #576880;
+    font-size: 18px;
+    background-color: #fff;
+    padding: 20px 54px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.wfps_setting_tab_menu ul li a.wfps_tab_active{
+    background-image: linear-gradient(to right, #3cb2ff, #485afd);
+    color: #ffffff;
+}
+
+.wfps_setting_tab_menu ul li a svg{
+    fill: #576880;
+}
+
+.wfps_setting_tab_menu ul li a.wfps_tab_active svg{
+    fill: #fff;
+}
+
+.wfps_builder_tab{
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+}
+
+.wfps_builder_tab h2{
+    color: rgba(0,0,0,.7);
+}
+
+.wfps_builder_tab p{
+    color: rgba(0,0,0,0.6);
+    text-align: justify;
+}
+
+.wfps-tab-active{
+    display: block;
+}
+
+/*----- Start Common------*/
+.wfps_version_blue{
+    color: #485AFD;
+    font-weight: 600;
+}
+
+.wfps_version_red{
+    color: #f86482;
+    font-weight: 600;
+}
+
+.wfpe_button{
+    background-color: #fff;
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+/*----- End Common------*/
+/*----- Start Header------*/
+.wfps_settings_header{
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    padding: 20px 15px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.wfps_header_left h1{
+    color: #424c5e;
+}
+
+.wfps_header_left h1 span{
+    font-weight: bold;
+}
+
+.wfps_header_right{
+    text-align: right;
+}
+
+.wfps_header_left,
+.wfps_header_right{
+    flex: 1 1 auto;
+}
+
+/*----- End Header------*/
+
+/*-------Start setting content-----*/
+.wfps_setting_content{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+    .wfps_setting_content {
+        flex-direction: column !important;
+        align-items:center;
+        }
+        .wfps_setting_row {
+        flex-direction: column;
+        }
+        .wfps_setting_block {
+        margin-top: 40px;
+        }
+        .wfps_setting_right {
+        background-size: 100% !important;
+        margin-right: 5px;
+            width:90% !important;
+        }
+        .wfps_setting_form_wrapper {
+        margin-right: 0px;
+    }
+
+}
+
+.wfps_setting_tab_heading h2{
+    color: #394b65;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 25px;
+    margin: 0;
+}
+
+/*-------Start setting form wrapper------*/
+.wfps_setting_form_wrapper{
+    flex: 6;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.wfps_setting_form_wrapper p.submit{
+    text-align: right;
+    margin-right: 25px;
+}
+
+.wfps_setting_form_wrapper .poststuff{
+    padding-top: 0;
+    min-width: 763px;
+}
+
+.wfps_setting_form_wrapper .metabox-holder{
+    padding-top: 0 !important;
+}
+
+.wfps_setting_form_wrapper .postbox{
+    border: 0;
+}
+
+/*-------End setting form wrapper------*/
+
+/*-----Start license tab-----*/
+.wfps_setting_form_license_tab{
+    padding-bottom: 140px;
+}
+
+.wfps_setting_form_license_tab_list{
+    font-size: 17px;
+    color: #576880;
+    margin-bottom: 60px;
+}
+
+.wfps_setting_form_license_tab_list ul{
+    list-style-image: url("../img/wfps-manage-license.png");
+    list-style-position: inside;
+    margin: 15px 40px 0 40px;
+}
+
+.wfps_setting_form_license_tab_list ul li{
+    line-height: 35px;
+}
+
+.wfps_setting_form_license_tab_list ul li a{
+    color: #437dfe;
+    text-decoration: underline;
+}
+
+.wfps_setting_form_license_key form{
+    position: relative;
+    overflow: hidden;
+}
+
+.wfps_setting_form_license_key_field{
+    width: 18%;
+    float: left;
+}
+
+.wfps_setting_form_license_key_field h3{
+    text-align: center;
+}
+
+.wfps_setting_form_license_key_button{
+    width: 75%;
+    float: left;
+}
+
+.wfps_setting_form_license_key_button .active_license_txt{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.wfps_setting_form_license_key_button .active_license_btn{
+    font-size: 15px;
+    color: #fff;
+    padding: 18px 40px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #3cb2ff, #485afd);
+    float: right;
+}
+
+/*-----End license tab-----*/
+/*-------Start right sidebar------*/
+.wfps_setting_right{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: 3;
+    padding: 10px;
+    margin-top: 83px;
+    border-radius: 5px;
+    background: url("../img/wfps-sidebar-bg.png");
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.wfps_setting_right_rocket{
+    margin: 30% auto;
+    text-align: center;
+}
+
+.wfps_setting_right_rocket img{
+    margin-bottom: 30px;
+}
+
+.wfps_setting_right_rocket a{
+    font-size: 16px;
+    color: #576880;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/*-------End right sidebar------*/
+/*-------Start Footer--------*/
+.wfps_setting_documentation{
+    background-color: #fff;
+    padding: 50px 40px;
+    /* border-radius: 10px; */
+}
+
+.wfps_setting_row{
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.wfps_setting_block{
+    box-shadow: 0 0 20px 0 #f2f2f2;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.wfps_setting_block_header{
+    display: flex;
+    align-items: center;
+}
+
+.wfps_setting_block_header .wfps_setting_block_header_icon img{
+    width: 35px;
+}
+
+.wfps_setting_block_header h4{
+    font-size: 18px;
+    color: #394b65;
+    margin: 0 15px;
+}
+
+.wfps_setting_documentation .wfps_setting_block_content p{
+    font-size: 13px;
+    color: #7d8da3;
+    line-height: 1.5;
+}
+
+.wfps_setting_documentation .wfps_setting_block_content a{
+    font-size: 16px;
+    color: #437dfe;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.wfps_setting_documentation .wfps_documentation a{
+    color: #51dd77;
+}
+
+.wfps_setting_documentation .wfps_report_bug a{
+    color: #518bff;
+}
+
+.wfps_setting_documentation .wfps_contact_us a{
+    color: #f99696;
+}
+
+.wfps_setting_documentation .wfps_make_review a{
+    color: #a551b3;
+}
+/*-------End Footer--------*/
+/*-------End setting content-----*/
+
+/*------------------------------------------------------
+                End New Style
+--------------------------------------------------------*/
+
+#wfps_editor .form-wrap label {
+    display: inline-block; 
+}
+
+#wfps_product-meta-tab h4 {
+    padding: 0px 15px;
+    margin: 1.33em 0 .5em 0;
+}
+
+#wfps_product-meta-tab p {
+    margin:0px 9px;
+}
+
+#wfps_product-meta-tab input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+#wfps_product-meta-tab input[type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+#wfps_product-meta-tab input[type="checkbox"] + label:before {
+    content: "";
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border:1px solid rgba(39,39,50,.25);
+    border-radius: 4px;
+}
+
+#wfps_product-meta-tab input[type="checkbox"]:hover + label:before {
+    background: #0877FF;
+}
+
+#wfps_product-meta-tab input[type="checkbox"]:focus + label:before {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+#wfps_product-meta-tab input[type="checkbox"]:checked + label:before {
+    background: #0877FF;
+}
+
+#wfps_product-meta-tab input[type="checkbox"]:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+
+#wfps_product-meta-tab input[type="checkbox"]:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+
+#wfps_product-meta-tab input[type="checkbox"]:checked + label:after{
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    width: 5px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#wfps_editor .hidden-field { 
+    display: block;
+}
+
+#woocommerce-order-items .wc-order-edit-line-item-actions .wfps_delete-order-item::before {
+    font-family: Dashicons;
+    speak: none;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    text-indent: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    content: "";
+    position: relative;
+    font-variant: normal;
+    margin: 0px;
+}
+
+#woocommerce-order-items .wfps_icon {
+    width:15px;
+    max-width: 100%;
+    display: inline;
+    margin: 0 4px 0px 0;
+}
+
+.wfps_editor_message {
+    color: #fffefe;
+    background: #FF9800;
+    padding: 5px 6px;
+    font-size: 13px;
+}
+
+.wfps_wpml_pro_meta * {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.wfps_wpml_pro_meta .wfps_editor_message {
+    opacity: 1;
+    pointer-events: all;
+}
+
+table.wp-list-table .column-wfps_forms {
+    width: 11%!important;
+}
+
+.toplevel_page_woo-free-product-sample #wpwrap {
+    font-family: Arial;
+    font-size: 12px;
+    background: #F2F7FA;
+}
+
+.wfps_settings .wfps_inside {
+    margin-top: 0;
+}
+
+.postbox table.form-table{
+    margin-top: 0;
+}
+
+.wfps_settings .wfps_inside .form_table {
+    padding:25px;    
+}
+
+.wfps_settings .wfps_inside .form_table p {
+    padding-top:0px;
+}
+
+.wfps_settings .wfps_inside .form-table th {
+    padding: 20px 10px 20px 26px;
+    color: #3b4a5c;
+}
+
+.wfps_settings .wfps_inside .form_table .form_table_left .group_heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wfps_settings .wfps_inside .form_table .form_table_row {
+    border-bottom: 1px solid #fdfdfd;
+    margin-top: 15px;
+}
+
+.wfps_settings .wfps_inside .form_table .form_table_left {
+    width:210px;
+    padding-bottom: 20px;
+}
+
+.wfps_settings .wfps_inside .form_table .form_table_right {
+    float:left;
+    padding:0;
+}
+
+.clearfix:before, .clearfix:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.wfps_settings .wfps_inside .form_table .form_table_right .block_view {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.wfps_settings .wfps_inside .form_table .label-text{
+    display: inline;
+}
+
+.wfps_settings .wfps_inside p.submit{
+    text-align: right;
+    margin-right: 26px;
+}
+
+.wfps_settings .wfps_inside .form-table td{
+    padding-right: 25px;
+    position: relative;
+}
+
+.wfps_settings .premium {
+    background-color: #fff;
+}
+
+.wfps_settings .premium .premium_left {
+    width: 40%;
+    float: left;
+    padding-left:30px;
+    padding-top: 20px;
+}
+
+.wfps_settings .premium .premium_left h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #40d469;
+}
+
+.wfps_settings .premium .premium_left .price{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.wfps_settings .premium .premium_left .tagline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 5;
+    color: #394b65;
+}
+
+.wfps_settings .premium .premium_left a {
+    height: 28px;
+    width:130px;
+    color: #ffffff;
+    background: #0877FF;
+    border-radius: 3px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.wfps_settings .premium .premium_left a:hover {
+    height: 28px;
+    width:130px;
+    color: #ffffff;
+    background: #3454F5;
+    border-radius: 3px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.wfps_settings .premium .premium_left_free_button a {
+    width: 100px;
+}
+
+.wfps_settings .premium .premium_left_free_button a:hover {
+    width: 100px;
+}
+
+.wfps_settings .premium .premium_right_nobg {
+    float:right;
+    position: relative;
+    width: 53%;
+}
+
+.wfps_settings .premium .premium_right {
+    float:right;
+    position: relative;
+    width: 53%;
+}
+
+.wfps_settings .premium .premium_right:before {
+    position: absolute;
+    background-color: #fff;
+    /* background-image: url(../img/bg_premium.png); */
+    background-repeat: no-repeat;
+    background-position:left;
+    content: '';
+    width: calc(100% + 150px);
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    background-size: cover;
+}
+
+.wfps_settings .premium .outer {
+    position: relative;
+    z-index: 2;
+}
+
+.wfps_settings .premium .outer a,
+.wfps_settings .premium .outer a:hover,
+.wfps_settings .premium .outer a:visited,
+.wfps_settings .premium .outer a:active{
+    color: #37a6dd;
+}
+
+.wfps_settings .premium .premium_right_nobg h4,
+.wfps_settings .premium .premium_right h4 {
+    color: #394b65;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+.wfps_settings .premium .premium_right_nobg ul, 
+.wfps_settings .premium .premium_right ul {
+    list-style: none;
+    padding:0 20px 0 30px;
+}
+
+.wfps_settings .premium .premium_right_nobg li,
+.wfps_settings .premium .premium_right li {
+    background-image: url(../img/wfps-tick-fill.png);
+    background-repeat: no-repeat;
+    background-position:top left;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    color: #394b65;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.wfps_settings .sidebar {
+    width: 25%;
+    float: right;
+}
+
+.wfps_settings .sidebar .sidebar_top {
+    background-image: url(../img/bg_horiz.png);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    padding: 20px 20px 20px 20px;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.wfps_settings .sidebar .sidebar_top h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+.wfps_settings .sidebar .sidebar_top .price_side {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.wfps_settings .sidebar .sidebar_top .tagline_side {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.wfps_settings .sidebar .sidebar_top a {
+    height: 28px;
+    width:100px;
+    color: #1AA1B7;
+    background: #ffffff;
+    border-radius: 3px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    padding-top:10px;
+    padding-left:10px;
+    text-decoration: none;
+}
+
+.wfps_settings .sidebar .sidebar_top a:hover {
+    height: 28px;
+    width:100px;
+    color: #ffffff;
+    background: #0877FF;
+    border-radius: 3px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+
+.wfps_settings .sidebar .sidebar_bottom {
+    background: #ffffff;
+    padding: 20px 20px;
+}
+
+.wfps_settings .sidebar .sidebar_bottom li {
+    background-color:#fff;
+    background-image: url(../img/wfps-tick-fill.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-bottom: 18px;
+    padding-left: 20px;
+}
+
+.wfps_settings .support {
+    background: #ffffff;
+    padding:10px;
+    margin-top: 5px;
+}
+
+.wfps_settings .wfps_inside .form_table input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.wfps_settings .wfps_inside .form_table input[type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.wfps_settings .wfps_inside .form_table input[type="checkbox"] + label:before {
+    content: "";
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    background: white;
+    border:1px solid rgba(39,39,50,.25);
+    border-radius: 4px;
+}
+
+.wfps_settings .wfps_inside .form_table input[type="checkbox"]:hover + label:before {
+    background: #0877FF;
+}
+
+.wfps_settings .wfps_inside input[type="checkbox"]:focus + label:before {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.wfps_settings .wfps_inside .form_table input[type="checkbox"]:checked + label:before {
+    background: #0877FF;
+ }
+
+.wfps_settings .wfps_inside .form_table input[type="checkbox"]:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+
+.wfps_settings .wfps_inside .form_table input[type="checkbox"]:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+
+.wfps_settings .wfps_inside .form_table input[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 1px;
+    width: 5px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wfps_settings input[type="text"],
+.wfps_settings input[type="number"]{
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    margin-top: 0;
+    font-size: 15px;
+    color: #576880;
+    padding: 5px 15px;
+}
+
+.wfps-license-activation-btn,
+.wfps_settings .button {
+    background-image: linear-gradient(to right, #3cb2ff, #485afd);
+    font-size: 15px;
+    color: #fff;
+    padding: 12px 40px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.wfps_settings .wfps-license-deactivation-btn{
+    background-color: rgba(186,110,120,.5);
+    width: auto;
+}
+
+.wfps-license-activation-btn, 
+.wfps_settings .button:hover,
+.wfps_settings .button:focus,
+.wfps_settings .button:active {
+    background: rgb(51, 80, 228);
+    border-color: rgb(51, 80, 228);
+    color: #fff;
+}
+
+.post-type-wfps_pt_forms #wfps_form_banner {
+    border: none;
+    box-shadow: none;
+    /*display: none;*/
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 3s forwards;
+
+}
+
+.post-type-wfps_pt_forms #wfps_form_banner .inside {
+    padding: 0px;
+    margin: 0px;
+}
+
+.post-type-wfps_pt_forms #wfps_form_banner .handlediv,
+.post-type-wfps_pt_forms #wfps_form_banner .hndle {
+    display: none;
+}
+
+.wfps_upgrade {
+    background: url(../img/upgrade_bg.svg) 100% 100% no-repeat #fff;
+    padding: 30px 40px;
+}
+
+.wfps_upgrade .wfps_upgrade_left {
+    float: left;
+    width: 60%;
+}
+
+.wfps_upgrade .wfps_upgrade_right {
+    float: left;
+    width: 40%;
+}
+
+.wfps_upgrade h1 {
+    font-size: 32px;
+    line-height: 37px;
+    color: #000;
+    margin: 0px 0px 10px 0;
+    padding: 0px;
+}
+
+.wfps_upgrade .price {
+    font-size: 22px;
+    line-height: 22px;
+    color: #272732;
+    margin-bottom: 15px;
+}
+
+.wfps_upgrade p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #272732;
+    margin: 0px;
+}
+
+.wfps_upgrade .wfps_button {
+    background:#004CFF;
+    border:none;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 14px 36px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    top:50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 60px;
+}
+
+.wfps_upgrade .wfps_button:hover {
+    background: #1d60ff;
+}
+
+.wfps_activation_status {
+    display: block;
+    padding-left: 26px;
+}
+
+.wfps_activation_status .wfps_activation_error { 
+    color:#f00;
+}
+
+.wfps_activation_status .wfps_activation_success {
+    color: #16a716;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.woo-free-product-sample-form-desc{
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0.5em 0;
+    color: #394b65;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:850px) {
+    .wfps_upgrade .wfps_upgrade_left,
+    .wfps_upgrade .wfps_upgrade_right {
+        float: none;
+        width: 100%;
+    }
+
+    .wfps_upgrade .wfps_button {
+        position: relative;
+        top: auto;
+        display: inline-block;
+        transform: translateY(0);
+        right: 0px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .wfps_settings .sidebar .sidebar_top, .wfps_settings .sidebar_bottom {
+        display:none;
+    }
+
+    .wfps_settings .wfps_settings_outer_left {
+        width:100%;
+    }
+
+    .wfps_settings .sidebar {
+        width:100%;
+    }
+
+    .wfps_upgrade{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 782px) {
+    .post-type-wfps_pt_forms #wpfooter {
+        display: block;
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+
+    .post-type-wfps_pt_forms #wpfooter #footer-left,
+    .post-type-wfps_pt_forms #wpfooter #footer-upgrade {
+        display: none;
+    }
+
+    .wfps_upgrade .wfps_upgrade_left {
+        width: 80%;
+    }
+
+    .wfps_upgrade .wfps_upgrade_right {
+        width: 20%;
+    }
+
+    .wfps_setting_form_wrapper{
+        margin-right: 0px;
+    }
+
+    .wfps_settings_header{
+        display: flow-root;
+    }
+
+    .wfps_header_right{
+        text-align: left;
+    }
+
+    .wfps_setting_content{
+        margin-top: 0;
+    }
+
+    .wfps_setting_tab_menu{
+        margin-bottom: 20px;
+    }
+
+    .wfps_settings .wfps_inside .form-table th{
+        padding: 20px 10px 20px 20px;
+    }
+
+    .wfps_settings .wfps_inside .form-table td{
+        padding: 0px 10px 10px 18px;
+    }
+
+    .woo-free-product-sample-form-desc{
+        margin: 0.5em 2px;
+    }
+
+    .wfps_setting_right{
+        margin-top: 83px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .wfps_settings .premium .premium_left {
+        width:100%;
+        padding-left: 30px;
+        padding-top: 5px;
+    }
+
+    .wfps_settings .premium .premium_right {
+        width:100%;
+        margin-top:10px
+    }
+
+    .wfps_settings .premium .premium_right:before {
+        width:100%;
+        background-position:-150px 0px;
+        background-image: url(../img/width600.jpg);
+    }
+
+    .wfps_settings .support {
+        padding-top: 5px;
+        padding-left: 5px;
+        margin-top: 5px;
+    }
+
+    .wfps_upgrade {
+        padding: 25px;
+    }
+
+    .wfps_upgrade .wfps_upgrade_left,
+    .wfps_upgrade .wfps_upgrade_right {
+        float: none;
+        width: 100%;
+    }
+
+    .wfps_upgrade .wfps_button {
+        position: relative;
+        top: auto;
+        display: inline-block;
+        transform: translateY(0);
+        right: 0px;
+        margin-top: 20px;
+    }
+
+    .wfps_setting_tab_menu ul li{
+        padding: 20px 0px;
+    }
+}
+
+.wfps-pro-label {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 40px;
+    background-image: linear-gradient(to right, #3cb2ff, #485afd);
+    font-weight: 600;
+    line-height: 20px;
+    padding: 2px 4px;
+    height: 20px;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-top: -2px;
+    position: absolute;
+}
+
+.product-sample_page_woo-free-product-sample-license .wfps_settings input[type="text"]{
+    height: 58px;
+}
+
+.product-sample_page_woo-free-product-sample-license .wfps_setting_form_wrapper{
+    margin-right: 0;
+}
+
+.product-sample_page_woo-free-product-sample-license .regular-text{
+    width: 37em;
+}
+
+.product-sample_page_woo-free-product-sample-license .wfps_settings .wfps_inside{
+    padding-bottom: 20px;
+}
