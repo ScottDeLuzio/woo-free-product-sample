@@ -78,15 +78,17 @@ class Woo_Free_Product_Sample_Helper {
 
 		if( isset( $disable_limit ) ) {
 			return TRUE;
-		}  else {
-			foreach( $woocommerce->cart->get_cart() as $key => $val ) {
-				if( 'product' == $notice_type ) {
-					if( ( isset( $val['free_sample'] ) && $product_id == $val['free_sample'] ) && ( $setting_options['max_qty_per_order'] <= $val['quantity'] ) ) {
-						return FALSE;
-					}
-				} else if( 'all' == $notice_type ) {
-					if( ( isset( $val['free_sample'] ) ) && ( $setting_options['max_qty_per_order'] <= self::wfps_cart_total() ) ) {
-						return FALSE;
+		} else {
+			if ( !empty( $woocommerce->cart->get_cart() ) ) {
+				foreach( $woocommerce->cart->get_cart() as $key => $val ) {
+					if( 'product' == $notice_type ) {
+						if( ( isset( $val['free_sample'] ) && $product_id == $val['free_sample'] ) && ( $setting_options['max_qty_per_order'] <= $val['quantity'] ) ) {
+							return FALSE;
+						}
+					} else if( 'all' == $notice_type ) {
+						if( ( isset( $val['free_sample'] ) ) && ( $setting_options['max_qty_per_order'] <= self::wfps_cart_total() ) ) {
+							return FALSE;
+						}
 					}
 				}
 			}

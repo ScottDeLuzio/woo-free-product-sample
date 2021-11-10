@@ -1,13 +1,12 @@
 === Free Product Sample for WooCommerce ===
 Contributors: ampmode, scottdeluzio
-Donate Link: http://amplifyplugins.com
 Tags: free, product, sample, free-sample, free-product-sample, free-sample-product, woocommerce, dokan, e-commerce, ecommerce
 Requires at least: 4.4
 Tested up to: 5.8.1
 WC requires at least: 3.1
 WC tested up to: 5.7.1
 Requires PHP: 5.6
-Stable tag: 2.2.2
+Stable tag: 2.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -115,6 +114,10 @@ This section describes how to install the plugin and get it working.
 5. Save/update product details
 
 == Changelog ==
+
+#### 2.2.3
+* Update: Added instructions to ensure AJAX checkout is enabled when using free sample on shop/categories pages.
+* Update: Fixed bug where checking for an item in the cart caused an error.
 
 #### 2.2.2
 * Fixed typo in Enable Products label in plugin settings.
@@ -257,6 +260,6 @@ This section describes how to install the plugin and get it working.
 * Initial version released
 
 == Upgrade Notice ==
-#### 2.2.2
-* Fixed typo in Enable Products label in plugin settings.
-* Enabled "All" setting to show as selected in plugin settings.
+#### 2.2.3
+* Update: Added instructions to ensure AJAX checkout is enabled when using free sample on shop/categories pages.
+* Update: Fixed bug where checking for an item in the cart caused an error.
