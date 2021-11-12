@@ -4,9 +4,9 @@ Tags: free, product, sample, free-sample, free-product-sample, free-sample-produ
 Requires at least: 4.4
 Tested up to: 5.8.1
 WC requires at least: 3.1
-WC tested up to: 5.7.1
+WC tested up to: 5.9.0
 Requires PHP: 5.6
-Stable tag: 2.2.3
+Stable tag: 2.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,9 @@ This section describes how to install the plugin and get it working.
 5. Save/update product details
 
 == Changelog ==
+
+#### 2.2.4
+* Update: Fixed bug where plugin was calling functions in admin area where they did not apply.
 
 #### 2.2.3
 * Update: Added instructions to ensure AJAX checkout is enabled when using free sample on shop/categories pages.
@@ -260,6 +263,5 @@ This section describes how to install the plugin and get it working.
 * Initial version released
 
 == Upgrade Notice ==
-#### 2.2.3
-* Update: Added instructions to ensure AJAX checkout is enabled when using free sample on shop/categories pages.
-* Update: Fixed bug where checking for an item in the cart caused an error.
+#### 2.2.4
+* Update: Fixed bug where plugin was calling functions in admin area where they did not apply.

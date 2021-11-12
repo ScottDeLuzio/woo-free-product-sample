@@ -20,7 +20,7 @@
  * Tested up to:      5.8.1
  *
  * WC requires at least: 3.1
- * WC tested up to:   5.8.0
+ * WC tested up to:   5.9.0
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'WFPS_VERSION', '2.2.3' );
+define( 'WFPS_VERSION', '2.2.4' );
 define( 'WFPS_MINIMUM_PHP_VERSION', '5.6.0' );
 define( 'WFPS_MINIMUM_WP_VERSION', '4.4' );
 define( 'WFPS_MINIMUM_WC_VERSION', '3.1' );

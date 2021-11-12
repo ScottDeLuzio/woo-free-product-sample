@@ -76,7 +76,7 @@ class Woo_Free_Product_Sample_Helper {
 		$disable_limit 	   = isset( $setting_options['disable_limit_per_order'] ) ? $setting_options['disable_limit_per_order'] : null;
 		$notice_type 	   = isset( $setting_options['limit_per_order'] ) ? $setting_options['limit_per_order'] : 'all';
 
-		if( isset( $disable_limit ) ) {
+		if( isset( $disable_limit ) || is_admin() ) {
 			return TRUE;
 		} else {
 			if ( !empty( $woocommerce->cart->get_cart() ) ) {
