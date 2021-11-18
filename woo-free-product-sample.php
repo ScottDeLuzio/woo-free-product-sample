@@ -8,7 +8,7 @@
  * Plugin Name:       Free Product Sample for WooCommerce
  * Plugin URI:        https://wordpress.org/plugins/woo-free-product-sample
  * Description:       It allows customers to order a product sample in a simple way.
- * Version:           2.2.3
+ * Version:           2.2.4
  * Author:            AMP-MODE
  * Author URI:        https://amplifyplugins.com
  * License:           GPL-2.0+
