@@ -39,7 +39,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 				} else {
 					$product_price     = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 				}
-				
+
 				$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 				?>
 				<li class="woocommerce-mini-cart-item <?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
@@ -57,22 +57,14 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 						$cart_item_key
 					);
 					?>
-                    <?php 
+                    <?php
                         if( isset( $cart_item['sample_price'] ) ) {
-
-							if( get_locale() == "ja" ) {
-								$sample =  esc_html__( 'サンプル - ', 'woo-free-product-sample' );
-							} else if( get_locale() == 'de_DE' ) {
-								$sample =  esc_html__( 'Testzugang - ', 'woo-free-product-sample' );								
-							} else {
-								$sample =  esc_html__( 'Sample - ', 'woo-free-product-sample' );
-							}
-
+							$sample =  esc_html__( 'Sample - ', 'woo-free-product-sample' );
                         } else {
                             $sample = '';
-						}  
-						$product_name = $sample . $product_name;      
-                    ?>					
+						}
+						$product_name = $sample . $product_name;
+                    ?>
 					<?php if ( empty( $product_permalink ) ) : ?>
 						<?php echo $thumbnail . $product_name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					<?php else : ?>
@@ -80,7 +72,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 							<?php echo $thumbnail . $product_name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						</a>
 					<?php endif; ?>
-					<?php 
+					<?php
 						$product 			= $cart_item['data'];
 					?>
 

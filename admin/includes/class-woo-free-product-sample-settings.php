@@ -173,7 +173,7 @@ class Woo_Free_Product_Sample_Settings {
                                             'type'          => 'text',
                                             'class'         => 'widefat',
                                             'description'   => __( '{product} and {qty} for dynamic content.', 'woo-free-product-sample' ),
-                                            'placeholder'   => __( '', 'woo-free-product-sample' ),
+                                            'placeholder'   => __( 'Maximum quantity', 'woo-free-product-sample' ),
                                         ),
                                     )
                                 )

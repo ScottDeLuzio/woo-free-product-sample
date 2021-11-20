@@ -1,11 +1,9 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: Free Product Sample for WooCommerce\n"
 "POT-Creation-Date: 2021-11-19 16:21-0700\n"
-"PO-Revision-Date: 2021-11-19 16:18-0700\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2021-11-19 17:01-0700\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,8 +14,10 @@ msgstr ""
 "X-Poedit-WPHeader: woo-free-product-sample.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: de_DE\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: vendor\n"
@@ -25,93 +25,94 @@ msgstr ""
 #: admin/class-woo-free-product-sample-admin.php:110
 #: admin/class-woo-free-product-sample-admin.php:111
 msgid "Product Sample"
-msgstr ""
+msgstr "Produktprobe"
 
 #: admin/class-woo-free-product-sample-admin.php:188
 msgid "Get help"
-msgstr ""
+msgstr "Hilfe anfordern"
 
 #: admin/class-woo-free-product-sample-admin.php:188
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 #: admin/class-woo-free-product-sample-admin.php:189
 msgid "Plugin Homepage"
-msgstr ""
+msgstr "Plugin-Homepage"
 
 #: admin/class-woo-free-product-sample-admin.php:190
 msgid "Rate the plugin"
-msgstr ""
+msgstr "Bewerte das Plugin"
 
 #: admin/class-woo-free-product-sample-admin.php:190
 msgid "Rate the plugin ★★★★★"
-msgstr ""
+msgstr "Bewerte das Plugin ★★★★★"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:36
 #: admin/includes/class-woo-free-product-sample-settings.php:40
 #: woo-free-product-sample.php:88
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:44
 msgid "Button Label"
-msgstr ""
+msgstr "Button Beschriftung"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:47
 #: admin/includes/class-woo-free-product-sample-settings.php:48
 msgid "Set Button Label"
-msgstr ""
+msgstr "Button Beschriftung festlegen"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:52
 msgid "Disable Maximum Limit"
-msgstr ""
+msgstr "Maximallimit deaktivieren"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:55
 msgid "Disable maximum order limit validation"
-msgstr ""
+msgstr "Deaktivieren der Überprüfung des maximalen Bestelllimits"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:59
 #: admin/includes/class-woo-free-product-sample-settings.php:62
+#, fuzzy
 msgid "Maximum Limit Type"
-msgstr ""
+msgstr "Höchstgrenze typ"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:72
 #: admin/includes/class-woo-free-product-sample-settings.php:75
 msgid "Maximum Quantity Per Order"
-msgstr ""
+msgstr "Maximale Menge pro Bestellung"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:82
 #: admin/includes/class-woo-free-product-sample-settings.php:85
 msgid "Enable Type"
-msgstr ""
+msgstr "Typ aktivieren"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:93
 msgid "Enable Products"
-msgstr ""
+msgstr "Produkte Aktivieren"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:96
 msgid "Products"
-msgstr ""
+msgstr "Produkte"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:105
 msgid "Enable Categories"
-msgstr ""
+msgstr "Kategorien aktivieren"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:108
 msgid "Categories"
-msgstr ""
+msgstr "Kategorien"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:117
 msgid "Sample Price"
-msgstr ""
+msgstr "Beispielpreis"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:120
 msgid "Set Sample Price"
-msgstr ""
+msgstr "Beispielpreis festlegen"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:128
 msgid "Hide in Shop/Categories Page"
-msgstr ""
+msgstr "Auf der Seite Shop/Kategorien ausblenden"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:132
 #, php-format
@@ -119,61 +120,64 @@ msgid ""
 "Hide in Shop/Categories Page. <a target=\"_blank\" href=\"%s\">Make sure "
 "AJAX add to cart buttons on archives is enabled to use this feature.</a>"
 msgstr ""
+"Auf der Seite Shop/Kategorien ausblenden. <a target=\"_blank\" href=\"%s"
+"\">Stellen Sie sicher, dass die AJAX-Schaltflächen zum Hinzufügen in den "
+"Warenkorb in Archiven aktiviert sind, um diese Funktion zu verwenden.</a>"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:140
 #: admin/includes/class-woo-free-product-sample-settings.php:143
 msgid "Shipping Class"
-msgstr ""
+msgstr "Versandklasse"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:150
 #: admin/includes/class-woo-free-product-sample-settings.php:153
 msgid "Tax Class"
-msgstr ""
+msgstr "Steuerklasse"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:164
 #: admin/includes/class-woo-free-product-sample-settings.php:168
 msgid "Message"
-msgstr ""
+msgstr "Meldung"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:172
 #: admin/partials/woo-free-product-sample-message.php:23
 msgid "Maximum quantity message"
-msgstr ""
+msgstr "Meldung der maximalen Menge"
 
 #: admin/includes/class-woo-free-product-sample-settings.php:175
 #: admin/partials/woo-free-product-sample-message.php:29
 msgid "{product} and {qty} for dynamic content."
-msgstr ""
+msgstr "{product} und {qty} für dynamische Inhalte."
 
 #: admin/includes/class-woo-free-product-sample-settings.php:176
 msgid "Maximum quantity"
-msgstr ""
+msgstr "Maximale Menge"
 
 #: admin/includes/fields/double-repeater.php:10
 #: admin/includes/fields/double-repeater.php:19
 #: public/partials/woocommerce/cart/cart.php:32
 #: public/partials/woocommerce/cart/cart.php:107
 msgid "Quantity"
-msgstr ""
+msgstr "Anzahl"
 
 #: admin/includes/fields/double-repeater.php:11
 #: admin/includes/fields/double-repeater.php:20
 #: public/partials/woocommerce/cart/cart.php:31
 #: public/partials/woocommerce/cart/cart.php:97
 msgid "Price"
-msgstr ""
+msgstr "Preis"
 
 #: admin/includes/fields/double-repeater.php:34
 msgid "Add Sample Price"
-msgstr ""
+msgstr "Beispielpreis hinzufügen"
 
 #: admin/includes/fields/multi-select.php:10
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
 #: admin/partials/footer.php:8 admin/partials/footer.php:14
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentation"
 
 #: admin/partials/footer.php:12
 msgid ""
@@ -183,29 +187,33 @@ msgstr ""
 
 #: admin/partials/footer.php:22 admin/partials/footer.php:28
 msgid "Report a Bug"
-msgstr ""
+msgstr "Melde einen technischen Fehler"
 
 #: admin/partials/footer.php:26
 msgid ""
 "You can contribute to make this plugin better reporting bugs, creating "
 "issues and request for a new feature at Github."
 msgstr ""
+"Sie können dazu beitragen, dass dieses Plugin Fehler besser meldet, "
+"Probleme erstellt und eine neue Funktion bei Github anzufordern."
 
 #: admin/partials/footer.php:36
 msgid "Need Help?"
-msgstr ""
+msgstr "Brauchst du Hilfe?"
 
 #: admin/partials/footer.php:40
 msgid "Stuck with something? Get help from live chat or support ticket."
 msgstr ""
+"Bleiben Sie bei etwas hängen? Holen Sie sich Hilfe vom Live-Chat oder "
+"Support-Ticket."
 
 #: admin/partials/footer.php:42
 msgid "Contact Us"
-msgstr ""
+msgstr "Kontaktiere uns"
 
 #: admin/partials/footer.php:50
 msgid "Give Review"
-msgstr ""
+msgstr "Bewertung schreiben"
 
 #: admin/partials/footer.php:54
 msgid ""
@@ -213,178 +221,183 @@ msgid ""
 "making it more awesome everyday. Take your 2 minutes to review the plugin "
 "and spread the love to encourage us to keep it going."
 msgstr ""
+"Wir freuen uns, Sie in Free Product Sample für WooCommerce-Familie zu "
+"haben. Wir machen es jeden Tag großartiger. Nehmen Sie sich 2 Minuten "
+"Zeit, um das Plugin zu überprüfen und die Liebe zu verbreiten, um uns zu "
+"ermutigen, es am Laufen zu halten."
 
 #: admin/partials/footer.php:56
 msgid "Leave a Review"
-msgstr ""
+msgstr "Bewertung schreiben"
 
 #: admin/partials/sidebar.php:7
 msgid "Manage License"
-msgstr ""
+msgstr "Lizenz verwalten"
 
 #: admin/partials/sidebar.php:9
 msgid "Upgrade to Pro"
-msgstr ""
+msgstr "Upgrade auf die Pro-Version"
 
 #: admin/partials/woo-free-product-sample-settings.php:81
 msgid "Pro"
-msgstr ""
+msgstr "Pro"
 
 #: includes/class-woo-free-product-sample-helper.php:148
 #: includes/class-woo-free-product-sample-helper.php:151
 #, php-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #: includes/class-woo-free-product-sample-helper.php:170
 msgid "Order a Sample"
-msgstr ""
+msgstr "Muster bestellen"
 
 #: includes/class-woo-free-product-sample-helper.php:272
 msgid "No Shipping Class"
-msgstr ""
+msgstr "Keine Versandklasse"
 
 #: includes/class-woo-free-product-sample-helper.php:292
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 #: public/class-woo-free-product-sample-public.php:222
 msgid "Please choose product options&hellip;"
-msgstr ""
+msgstr "Bitte Produktoptionen auswählen&hellip;"
 
 #. translators: %s: Attribute name.
 #: public/class-woo-free-product-sample-public.php:253
 #, php-format
 msgid "Invalid value posted for %s"
-msgstr ""
+msgstr "Ungültiger Wert für %s"
 
 #. translators: %s: Attribute name.
 #: public/class-woo-free-product-sample-public.php:261
 #, php-format
 msgid "%s is a required field"
 msgid_plural "%s are required fields"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s ist ein Pflichtfeld"
+msgstr[1] "%s sind Pflichtfelder"
 
 #: public/class-woo-free-product-sample-public.php:325
 msgid "Sample"
-msgstr ""
+msgstr "Muster"
 
 #: public/class-woo-free-product-sample-public.php:427
 msgid "この商品を注文できます "
-msgstr ""
+msgstr "Sie können dieses Produkt bestellen "
 
 #: public/class-woo-free-product-sample-public.php:429
 msgid "You can order this product "
-msgstr ""
+msgstr "Sie können dieses Produkt bestellen "
 
 #: public/class-woo-free-product-sample-public.php:438
 #: public/class-woo-free-product-sample-public.php:490
 msgid "サンプル商品を最大で注文できます "
-msgstr ""
+msgstr "Sie können Musterprodukt maximal bestellen "
 
 #: public/class-woo-free-product-sample-public.php:440
 msgid "You can order sample product maximum "
-msgstr ""
+msgstr "Sie können Musterprodukt maximal bestellen "
 
 #: public/class-woo-free-product-sample-public.php:473
 msgid "注文できます "
-msgstr ""
+msgstr "Sie können bestellen "
 
 #: public/class-woo-free-product-sample-public.php:477
 #: public/class-woo-free-product-sample-public.php:493
 #, php-format
 msgid "%1$s."
-msgstr ""
+msgstr "%1$s."
 
 #: public/class-woo-free-product-sample-public.php:521
 #: public/class-woo-free-product-sample-public.php:554
 #: public/partials/woocommerce/cart/mini-cart.php:62
 #: public/partials/woocommerce/order/order-details-item.php:49
 msgid "Sample - "
-msgstr ""
+msgstr "Muster - "
 
 #: public/class-woo-free-product-sample-public.php:523
 #, php-format
 msgctxt "Item name in quotes"
 msgid "&ldquo;%s&rdquo;"
-msgstr ""
+msgstr "&ldquo;%s&rdquo;"
 
 #. translators: %s: product name
 #: public/class-woo-free-product-sample-public.php:529
 #, php-format
 msgid "%s has been added to your cart."
 msgid_plural "%s have been added to your cart."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s wurde zu Ihrem Warenkorb hinzugefügt."
+msgstr[1] "%s wurden zu Ihrem Warenkorb hinzugefügt."
 
 #: public/class-woo-free-product-sample-public.php:532
 msgid "View cart"
-msgstr ""
+msgstr "Warenkorb ansehen"
 
 #: public/partials/woocommerce/cart/cart.php:30
 #: public/partials/woocommerce/cart/cart.php:77
 msgid "Product"
-msgstr ""
+msgstr "Produkt"
 
 #: public/partials/woocommerce/cart/cart.php:33
 #: public/partials/woocommerce/cart/cart.php:129
 msgid "Subtotal"
-msgstr ""
+msgstr "Zwischensumme"
 
 #: public/partials/woocommerce/cart/cart.php:56
 #: public/partials/woocommerce/cart/mini-cart.php:52
 msgid "Remove this item"
-msgstr ""
+msgstr "Diesen Artikel entfernen"
 
 #: public/partials/woocommerce/cart/cart.php:92
 msgid "Available on backorder"
-msgstr ""
+msgstr "Verfügbar auf Nachbestellung"
 
 #: public/partials/woocommerce/cart/cart.php:147
 msgid "Coupon:"
-msgstr ""
+msgstr "Gutschein:"
 
 #: public/partials/woocommerce/cart/cart.php:147
 msgid "Coupon code"
-msgstr ""
+msgstr "Gutscheincode"
 
 #: public/partials/woocommerce/cart/cart.php:147
 msgid "Apply coupon"
-msgstr ""
+msgstr "Gutschein anwenden"
 
 #: public/partials/woocommerce/cart/cart.php:152
 msgid "Update cart"
-msgstr ""
+msgstr "Warenkorb aktualisieren"
 
 #: public/partials/woocommerce/cart/mini-cart.php:109
 msgid "No products in the cart."
-msgstr ""
+msgstr "Es befinden sich keine Produkte im Warenkorb."
 
 #: woo-free-product-sample.php:89
 msgid "Docs"
-msgstr ""
+msgstr "Dokumentation"
 
 #: woo-free-product-sample.php:91
 msgid "Get Pro"
-msgstr ""
+msgstr "Hol dir Pro"
 
 #. Plugin Name of the plugin/theme
 msgid "Free Product Sample for WooCommerce"
-msgstr ""
+msgstr "Free Product Sample for WooCommerce"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wordpress.org/plugins/woo-free-product-sample"
-msgstr ""
+msgstr "https://wordpress.org/plugins/woo-free-product-sample"
 
 #. Description of the plugin/theme
 msgid "It allows customers to order a product sample in a simple way."
 msgstr ""
+"Es ermöglicht Kunden, ein Produktmuster auf einfache Weise zu bestellen."
 
 #. Author of the plugin/theme
 msgid "AMP-MODE"
-msgstr ""
+msgstr "AMP-MODE"
 
 #. Author URI of the plugin/theme
 msgid "https://amplifyplugins.com"
-msgstr ""
+msgstr "https://amplifyplugins.com"

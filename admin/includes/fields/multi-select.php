@@ -3,7 +3,7 @@
     <?php
     $settings = \Woo_Free_Product_Sample_Helper::wfps_settings();
     $all_selected = '';
-    if ( '0' == $settings['enable_product'][0] ) {
+    if ( !isset( $settings['enable_product'] ) || '0' == $settings['enable_product'][0] ) {
         $all_selected = 'selected';
     }
     ?>

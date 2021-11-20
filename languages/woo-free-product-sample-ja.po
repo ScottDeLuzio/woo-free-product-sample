@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "POT-Creation-Date: 2020-05-04 15:58+0000\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"PO-Revision-Date: 2020-05-09 10:42+0600\n"
-"X-Generator: Poedit 2.3\n"
+"PO-Revision-Date: 2021-11-19 16:23-0700\n"
+"X-Generator: Poedit 2.4.2\n"
 "Project-Id-Version: AmplifyPlugins\n"
 "Language-Team: 日本語\n"
 "MIME-Version: 1.0\n"
@@ -110,7 +110,7 @@ msgstr "のみ"
 
 #: admin/partials/woo-free-product-sample-settings.php:66
 msgid "$29.00"
-msgstr ""
+msgstr "$29.00"
 
 #: admin/partials/woo-free-product-sample-settings.php:66
 #: admin/partials/woo-free-product-sample-settings.php:106
@@ -185,7 +185,7 @@ msgstr "サンプル製品のカスタムSKUを設定します。"
 
 #: admin/partials/woo-free-product-sample-settings.php:106
 msgid "$29"
-msgstr ""
+msgstr "$29"
 
 #: admin/partials/woo-free-product-sample-settings.php:138
 msgid "Dedicated Support Team"
@@ -213,7 +213,7 @@ msgstr ""
 
 #. URI of the plugin
 msgid "https://wordpress.org/plugins/woo-free-product-sample"
-msgstr ""
+msgstr "https://wordpress.org/plugins/woo-free-product-sample"
 
 #. Author of the plugin
 msgid "Amplify Plugins"
@@ -221,4 +221,4 @@ msgstr "Amplify Plugins"
 
 #. Author URI of the plugin
 msgid "https://amplifyplugins.com"
-msgstr ""
+msgstr "https://amplifyplugins.com"
