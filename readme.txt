@@ -6,7 +6,7 @@ Tested up to: 5.8.2
 WC requires at least: 3.1
 WC tested up to: 5.9.0
 Requires PHP: 5.6
-Stable tag: 2.2.5
+Stable tag: 2.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,9 @@ This section describes how to install the plugin and get it working.
 5. Save/update product details
 
 == Changelog ==
+
+#### 2.2.6
+* Update: Fixed issue where textdomain was not loaded on the proper action hook causing it to be loaded before the correct language was set.
 
 #### 2.2.5
 * Update: Removed translatable strings that were previously hard-coded based on regions. This caused certain text to not display at all (even in the incorrect language).
@@ -268,7 +271,5 @@ This section describes how to install the plugin and get it working.
 * Initial version released
 
 == Upgrade Notice ==
-#### 2.2.5
-* Update: Removed translatable strings that were previously hard-coded based on regions. This caused certain text to not display at all (even in the incorrect language).
-* Update: Updated Japanese (ja) translation.
-* New: Added German (de_DE) translation.
+#### 2.2.6
+* Update: Fixed issue where textdomain was not loaded on the proper action hook causing it to be loaded before the correct language was set.
