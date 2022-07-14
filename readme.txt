@@ -4,9 +4,9 @@ Tags: free, product, sample, free-sample, free-product-sample, free-sample-produ
 Requires at least: 4.4
 Tested up to: 5.8.2
 WC requires at least: 3.1
-WC tested up to: 5.9.0
+WC tested up to: 6.0.1
 Requires PHP: 5.6
-Stable tag: 2.2.6
+Stable tag: 2.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,9 @@ This section describes how to install the plugin and get it working.
 5. Save/update product details
 
 == Changelog ==
+
+#### 2.2.7
+* Updated tested up to versions of WP and WooCommerce.
 
 #### 2.2.6
 * Update: Fixed issue where textdomain was not loaded on the proper action hook causing it to be loaded before the correct language was set.
@@ -271,5 +274,5 @@ This section describes how to install the plugin and get it working.
 * Initial version released
 
 == Upgrade Notice ==
-#### 2.2.6
-* Update: Fixed issue where textdomain was not loaded on the proper action hook causing it to be loaded before the correct language was set.
+#### 2.2.7
+* Updated tested up to versions of WP and WooCommerce.
