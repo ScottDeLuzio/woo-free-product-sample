@@ -1,3 +1,12 @@
+<?php
+$plugins = get_option( 'active_plugins' );
+if ( is_admin() ) {
+    if ( ! function_exists( 'get_plugin_data' ) ) {
+        require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+    }
+    // Checks if WooCommerce Marketplace Version is active
+    if ( ! in_array( 'free-product-sample-for-woocommerce/woo-free-product-sample-pro.php', $plugins ) ) {
+?>
     <!---- Start Right sidebar ---->
     <div class="wfps_setting_right">
         <div class="wfps_setting_right_rocket">
@@ -11,3 +20,7 @@
         </div>
     </div>
     <!---- End Right sidebar ---->
+<?php
+    }
+}
+?>

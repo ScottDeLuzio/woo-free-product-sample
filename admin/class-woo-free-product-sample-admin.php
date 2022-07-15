@@ -106,17 +106,16 @@ class Woo_Free_Product_Sample_Admin {
 	 */
     public function wfps_settings_menu() {
 
-        add_menu_page(
+		add_submenu_page(
+			'woocommerce',
 			__('Product Sample', 'woo-free-product-sample'),
 			__('Product Sample', 'woo-free-product-sample'),
 			'manage_options',
 			'woo-free-product-sample',
-            array(
+			array(
                 $this,
                 'wfps_settings_page'
-			),
-			WFPS_ADMIN_URL . 'img/woo-free-product-sample.png',
-			60
+			)
 		);
 
 	}
@@ -180,8 +179,8 @@ class Woo_Free_Product_Sample_Admin {
 	 * @param    none
 	 * @return   void
 	 */
-	public function plugin_meta_links($links, $file){
-		if ($file !== plugin_basename(WFPS_FILE)) {
+	public function plugin_meta_links( $links, $file ) {
+		if ( $file !== plugin_basename( WFPS_FILE ) ) {
 			return $links;
 		}
 

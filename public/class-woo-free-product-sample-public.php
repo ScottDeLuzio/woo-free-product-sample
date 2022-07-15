@@ -610,6 +610,9 @@ class Woo_Free_Product_Sample_Public {
 			$woocommerce->session->set( 'wc_notices', null );
 			$validation = true;
 		}
+$price_calculator = 'WC_Price_Calculator_Cart';
+global $price_calculator;
+remove_filter( 'woocommerce_get_item_data', array( $price_calculator, 'display_product_data_in_cart' ), 999 );
 		return $validation;
 	}
 

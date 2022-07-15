@@ -11,7 +11,7 @@
                 <p>
                     <?php echo __('Get started by spending some time with the documentation to get familiar with this plugin. Build awesome websites for you or your clients with ease.', 'woo-free-product-sample'); ?>
                 </p>
-                <a href="http://docs.amplifyplugins.com" target="_blank"><?php echo __('Documentation', 'woo-free-product-sample'); ?></a>
+                <a href="<?php echo wfps_external_links( 'docs' ); ?>" target="_blank"><?php echo __('Documentation', 'woo-free-product-sample'); ?></a>
             </div>
         </div>
         <div class="wfps_setting_block">
@@ -25,7 +25,7 @@
                 <p>
                     <?php echo __('You can contribute to make this plugin better reporting bugs, creating issues and request for a new feature at Github.', 'woo-free-product-sample'); ?>
                 </p>
-                <a href="https://amplifyplugins.com/support" target="_blank"><?php echo __('Report a Bug', 'woo-free-product-sample'); ?></a>
+                <a href="<?php echo wfps_external_links( 'support' ); ?>" target="_blank"><?php echo __('Report a Bug', 'woo-free-product-sample'); ?></a>
             </div>
         </div>
         <div class="wfps_setting_block">
@@ -39,7 +39,7 @@
                 <p>
                     <?php echo __('Stuck with something? Get help from live chat or support ticket.', 'woo-free-product-sample'); ?>
                 </p>
-                <a href="https://amplifyplugins.com/support" target="_blank"><?php echo __('Contact Us', 'woo-free-product-sample'); ?></a>
+                <a href="<?php echo wfps_external_links( 'support' ); ?>" target="_blank"><?php echo __('Contact Us', 'woo-free-product-sample'); ?></a>
             </div>
         </div>
         <div class="wfps_setting_block">
@@ -53,7 +53,7 @@
                 <p>
                     <?php echo __('We love to have you in Free Product Sample for WooCommerce family. We are making it more awesome everyday. Take your 2 minutes to review the plugin and spread the love to encourage us to keep it going.', 'woo-free-product-sample'); ?>
                 </p>
-                <a href="https://wordpress.org/support/plugin/woo-free-product-sample/reviews/#new-post" target="_blank"><?php echo __('Leave a Review', 'woo-free-product-sample'); ?></a>
+                <a href="<?php echo wfps_external_links( 'review' ); ?>" target="_blank"><?php echo __('Leave a Review', 'woo-free-product-sample'); ?></a>
             </div>
         </div>
     </div>

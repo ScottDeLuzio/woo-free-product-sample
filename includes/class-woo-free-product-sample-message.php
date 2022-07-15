@@ -52,12 +52,22 @@ class Woo_Free_Product_Sample_Message {
 
         $final_msg         = '';
 		$setting_options   = wp_parse_args( get_option(self::$_optionName), self::$_defaultOptions );
-		$message 		   = isset( $setting_options['maximum_qty_message'] ) ? $setting_options['maximum_qty_message'] : '';
+		$max_qty           = (int)$setting_options['max_qty_per_order'];
+		$default_message   = 'There is a limit of ' . sprintf(
+			_n(
+				'%s sample per order',
+				'%s samples per order',
+				$max_qty,
+				'woo-free-product-sample'
+			),
+			$max_qty
+		);
+		$message 		   = isset( $setting_options['maximum_qty_message'] ) && '' != $setting_options['maximum_qty_message'] ? $setting_options['maximum_qty_message'] : $default_message;
 
         $product		   = wc_get_product( $product_id );
-        $searchVal         = array("{product}", "{qty}");
-        $replaceVal        = array($product->get_name(), $setting_options['max_qty_per_order'] );
-        $final_msg         = str_replace($searchVal, $replaceVal, $message);
+        $searchVal         = array( "{product}", "{qty}" );
+        $replaceVal        = array( $product->get_name(), $setting_options['max_qty_per_order'] );
+        $final_msg         = str_replace( $searchVal, $replaceVal, $message );
         return $final_msg;
 
     }

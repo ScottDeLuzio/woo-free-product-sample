@@ -178,7 +178,7 @@ class Woo_Free_Product_Sample_Helper {
 
 		$setting_options['button_label'] = strtr( $setting_options['button_label'], $vars );
 
-		$button_label = isset( $setting_options['button_label'] ) ? esc_html__( $setting_options['button_label'], 'woo-free-product-sample' ) : $default_label;
+		$button_label = isset( $setting_options['button_label'] ) && '' != $setting_options['button_label'] ? esc_html__( $setting_options['button_label'], 'woo-free-product-sample' ) : $default_label;
 
 		$button_label = apply_filters( 'woo_free_product_sample_button_label_product', $button_label, $product );
 
