@@ -6,7 +6,7 @@ Tested up to: 6.1.0
 WC requires at least: 3.1
 WC tested up to: 6.7.0
 Requires PHP: 5.6
-Stable tag: 2.2.7
+Stable tag: 2.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,8 @@ This section describes how to install the plugin and get it working.
 5. Save/update product details
 
 == Changelog ==
+#### 2.2.8
+* Consolidated admin notices to one notice.
 
 #### 2.2.7
 * Update: Improved compatibility with pro versions.
@@ -275,6 +277,5 @@ This section describes how to install the plugin and get it working.
 * Initial version released
 
 == Upgrade Notice ==
-#### 2.2.7
-* Update: Improved compatibility with pro versions.
-* Update: Included improved handling for when certain settings were left empty/blank.
+#### 2.2.8
+* Consolidated admin notices to one notice.

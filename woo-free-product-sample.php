@@ -8,7 +8,7 @@
  * Plugin Name:       Free Product Sample for WooCommerce
  * Plugin URI:        https://wordpress.org/plugins/woo-free-product-sample
  * Description:       It allows customers to order a product sample in a simple way.
- * Version:           2.2.7
+ * Version:           2.2.8
  * Author:            AMP-MODE
  * Author URI:        https://amplifyplugins.com
  * License:           GPL-2.0+
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'WFPS_VERSION', '2.2.7' );
+define( 'WFPS_VERSION', '2.2.8' );
 define( 'WFPS_MINIMUM_PHP_VERSION', '5.6.0' );
 define( 'WFPS_MINIMUM_WP_VERSION', '4.4' );
 define( 'WFPS_MINIMUM_WC_VERSION', '3.1' );
@@ -64,7 +64,7 @@ class Woo_Free_Product_Sample_Start {
 	 *
 	 * @since 2.0.0
 	 */
-	protected function __construct() {
+	private function __construct() {
 
 		register_activation_hook( __FILE__, array( $this, 'wfps_activation_check' ) );
 
@@ -85,9 +85,11 @@ class Woo_Free_Product_Sample_Start {
 	 * @since    2.0.0
 	 */
     public function wfps_plugin_action_links( $links ) {
-		$links[] = '<a href="' . admin_url( 'admin.php?page=woo-free-product-sample' ) . '">' . __( 'Settings', 'woo-free-product-sample' ) . '</a>';
+		if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+			$links[] = '<a href="' . admin_url( 'admin.php?page=woo-free-product-sample' ) . '">' . __( 'Settings', 'woo-free-product-sample' ) . '</a>';
+		}
 		$links[] = '<a href="https://docs.amplifyplugins.com/">' . __( 'Docs', 'woo-free-product-sample' ) . '</a>';
-		if( !class_exists('Woo_Free_Product_Sample_Pro') ) {
+		if ( !is_plugin_active( 'woo-free-product-sample-pro/woo-free-product-sample-pro.php' ) ) {
 			$links[] = '<a href="https://amplifyplugins.com/downloads/free-product-sample-for-woocommerce/" style="color: #d30c5c;font-weight: bold;">' . __( 'Get Pro', 'woo-free-product-sample' ) . '</a>';
 		}
         return $links;
@@ -154,7 +156,7 @@ class Woo_Free_Product_Sample_Start {
 
 			set_transient( '_wfps_plugin_activation', true, 30 );
 			/**
-			* Reqrite the rules on activation.
+			* Rewrite the rules on activation.
 			*/
 			flush_rewrite_rules();
 
@@ -174,7 +176,7 @@ class Woo_Free_Product_Sample_Start {
 
 			$this->wfps_deactivate_plugin();
 
-			$this->wfps_add_admin_notice( 'bad_environment', 'error', WFPS_PLUGIN_NAME . ' has been deactivated. ' . $this->wfps_get_environment_message() );
+			$this->add_admin_notice( 'bad_environment', 'error', WFPS_PLUGIN_NAME . ' has been deactivated. ' . $this->wfps_get_environment_message() );
 		}
 	}
 
@@ -189,7 +191,7 @@ class Woo_Free_Product_Sample_Start {
 
 		if ( ! $this->wfps_is_wp_compatible() ) {
 
-			$this->wfps_add_admin_notice( 'update_wordpress', 'error', sprintf(
+			$this->add_admin_notice( 'update_wordpress', 'error', sprintf(
 				'%s requires WordPress version %s or higher. Please %supdate WordPress &raquo;%s',
 				'<strong>' . WFPS_PLUGIN_NAME . '</strong>',
 				WFPS_MINIMUM_WP_VERSION,
@@ -197,9 +199,9 @@ class Woo_Free_Product_Sample_Start {
 			) );
 		}
 
-		if ( ! $this->wfps_is_wc_compatible() ) {
+		if ( ! $this->wfps_is_wc_compatible() && is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 
-			$this->wfps_add_admin_notice( 'update_woocommerce', 'error', sprintf(
+			$this->add_admin_notice( 'update_woocommerce', 'error', sprintf(
 				'%1$s requires WooCommerce version %2$s or higher. Please %3$supdate WooCommerce%4$s to the latest version, or %5$sdownload the minimum required version &raquo;%6$s',
 				'<strong>' . WFPS_PLUGIN_NAME . '</strong>',
 				WFPS_MINIMUM_WC_VERSION,
@@ -270,7 +272,7 @@ class Woo_Free_Product_Sample_Start {
 	 * @param string $class the css class for the notice
 	 * @param string $message the notice message
 	 */
-	public function wfps_add_admin_notice( $slug, $class, $message ) {
+	public function add_admin_notice( $slug, $class, $message ) {
 
 		$this->notices[ $slug ] = array(
 			'class'   => $class,
@@ -284,16 +286,19 @@ class Woo_Free_Product_Sample_Start {
 	 * @since 2.0.0
 	 */
 	public function wfps_admin_notices() {
-
-		foreach ( $this->notices as $notice_key => $notice ) :
-
+		if ( ! empty( $this->notices ) ) {
 			?>
-			<div class="<?php echo esc_attr( $notice['class'] ); ?>">
-				<p><?php echo wp_kses( $notice['message'], array( 'a' => array( 'href' => array() ) ) ); ?></p>
+			<div class="error">
+			<?php
+			foreach ( $this->notices as $key => $notice_values ) :
+				?>
+				<p><?php echo wp_kses( $notice_values['message'], array( 'a' => array( 'href' => array() ), 'button' => array( 'id' => array(), 'class' => array() ) ) ); ?></p>
+				<?php
+			endforeach;
+			?>
 			</div>
 			<?php
-
-		endforeach;
+		}
 	}
 
 	/**
