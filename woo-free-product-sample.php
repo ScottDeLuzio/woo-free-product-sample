@@ -8,7 +8,7 @@
  * Plugin Name:       Free Product Sample for WooCommerce
  * Plugin URI:        https://wordpress.org/plugins/woo-free-product-sample
  * Description:       It allows customers to order a product sample in a simple way.
- * Version:           2.2.8
+ * Version:           2.2.9
  * Author:            AMP-MODE
  * Author URI:        https://amplifyplugins.com
  * License:           GPL-2.0+
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'WFPS_VERSION', '2.2.8' );
+define( 'WFPS_VERSION', '2.2.9' );
 define( 'WFPS_MINIMUM_PHP_VERSION', '5.6.0' );
 define( 'WFPS_MINIMUM_WP_VERSION', '4.4' );
 define( 'WFPS_MINIMUM_WC_VERSION', '3.1' );
@@ -89,7 +89,8 @@ class Woo_Free_Product_Sample_Start {
 			$links[] = '<a href="' . admin_url( 'admin.php?page=woo-free-product-sample' ) . '">' . __( 'Settings', 'woo-free-product-sample' ) . '</a>';
 		}
 		$links[] = '<a href="https://docs.amplifyplugins.com/">' . __( 'Docs', 'woo-free-product-sample' ) . '</a>';
-		if ( !is_plugin_active( 'woo-free-product-sample-pro/woo-free-product-sample-pro.php' ) ) {
+
+		if ( !is_plugin_active( 'woo-free-product-sample-pro/woo-free-product-sample-pro.php' ) && !is_plugin_active( 'free-product-sample-for-woocommerce/woo-free-product-sample-pro.php' ) ) {
 			$links[] = '<a href="https://amplifyplugins.com/downloads/free-product-sample-for-woocommerce/" style="color: #d30c5c;font-weight: bold;">' . __( 'Get Pro', 'woo-free-product-sample' ) . '</a>';
 		}
         return $links;

@@ -187,8 +187,10 @@ class Woo_Free_Product_Sample {
         delete_transient( '_wfps_plugin_activation' );
 
 		wp_safe_redirect( add_query_arg( array(
-			'page'		=> 'woo-free-product-sample'
-		), admin_url( 'admin.php' ) ) );
+			'activate'		=> 'true',
+			'plugin_status' => 'all',
+			'paged'		=> '1',
+		), admin_url( 'plugins.php' ) ) );
 
     }
 
