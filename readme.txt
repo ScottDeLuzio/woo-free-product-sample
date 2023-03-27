@@ -2,9 +2,9 @@
 Contributors: ampmode, scottdeluzio
 Tags: free, product, sample, free-sample, free-product-sample, free-sample-product, woocommerce, dokan, e-commerce, ecommerce
 Requires at least: 4.4
-Tested up to: 6.1.0
+Tested up to: 6.1.1
 WC requires at least: 3.1
-WC tested up to: 6.7.0
+WC tested up to: 7.5.0
 Requires PHP: 5.6
 Stable tag: 2.2.9
 License: GPLv2 or later
