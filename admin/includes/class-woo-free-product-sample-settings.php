@@ -75,7 +75,8 @@ class Woo_Free_Product_Sample_Settings {
                                                 'description'   => __( 'Maximum Quantity Per Order', 'woo-free-product-sample' ),
                                                 'placeholder'   => 5,
                                                 'style'			=> 'class="max_qty_per_order_area"',
-                                                'position'		=> 'tr'
+                                                'position'		=> 'tr',
+                                                'min'           => 0
                                             ),
                                             array(
                                                 'name'          => 'enable_type',
