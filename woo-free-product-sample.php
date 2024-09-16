@@ -8,7 +8,7 @@
  * Plugin Name:       Free Product Sample for WooCommerce
  * Plugin URI:        https://wordpress.org/plugins/woo-free-product-sample
  * Description:       It allows customers to order a product sample in a simple way.
- * Version:           2.3.1
+ * Version:           2.3.2
  * Author:            AMP-MODE
  * Author URI:        https://amplifyplugins.com
  * License:           GPL-2.0+
@@ -17,10 +17,10 @@
  * Domain Path:       /languages
  * Requires PHP:      5.6
  * Requires at least: 4.4
- * Tested up to:      6.2.2
+ * Tested up to:      6.6.1
  *
  * WC requires at least: 3.1
- * WC tested up to:   7.7.0
+ * WC tested up to:   9.2.3
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'WFPS_VERSION', '2.3.1' );
+define( 'WFPS_VERSION', '2.3.2' );
 define( 'WFPS_MINIMUM_PHP_VERSION', '5.6.0' );
 define( 'WFPS_MINIMUM_WP_VERSION', '4.4' );
 define( 'WFPS_MINIMUM_WC_VERSION', '3.1' );
@@ -164,6 +164,21 @@ class Woo_Free_Product_Sample_Start {
 		}
 	}
 
+    /**
+     * Determines if the HPOS feature is enabled in WooCommerce.
+     *
+     * @internal
+     *
+     * @since 2.0.0
+     */
+
+    private function wfps_is_hpos_enabled() {
+
+		$options = get_option( 'woocommerce_hpos_options' );
+		return isset( $options['enabled'] ) && $options['enabled'];
+
+    }
+
 	/**
 	 * Checks the environment on loading WordPress, just in case the environment changes after activation.
 	 *
@@ -179,6 +194,29 @@ class Woo_Free_Product_Sample_Start {
 
 			$this->add_admin_notice( 'bad_environment', 'error', WFPS_PLUGIN_NAME . ' has been deactivated. ' . $this->wfps_get_environment_message() );
 		}
+
+		/**
+		* Check WooCommerce version and HPOS feature status
+		*/
+        if ( ! $this->wfps_is_wc_compatible() && is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+
+            $this->add_admin_notice( 'update_woocommerce', 'error', sprintf(
+                '%1$s requires WooCommerce version %2$s or higher. Please update WooCommerce to the latest version.',
+                '<strong>' . WFPS_PLUGIN_NAME . '</strong>',
+                WFPS_MINIMUM_WC_VERSION
+            ) );
+
+        }
+
+		/**
+		* Check for High-Performance Order Storage (HPOS) feature
+		*/
+        if ( $this->wfps_is_hpos_enabled() ) {
+
+            $this->add_admin_notice( 'hpos_incompatibility', 'error', __( 'WooCommerce HPOS is enabled. This plugin may not be fully compatible.', 'woo-free-product-sample' ) );
+
+        }
+
 	}
 
 	/**
