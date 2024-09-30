@@ -6,7 +6,7 @@ Tested up to: 6.1.1
 WC requires at least: 3.1
 WC tested up to: 7.5.1
 Requires PHP: 5.6
-Stable tag: 2.2.9
+Stable tag: 2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,6 +114,12 @@ This section describes how to install the plugin and get it working.
 5. Save/update product details
 
 == Changelog ==
+#### 2.3.1
+* Fixed the issue of missing the meta key for the sample product.
+
+#### 2.3.0
+* Update: Replace the deprecated function - woocommerce_add_order_item_meta => woocommerce_new_order_item.
+
 #### 2.2.9
 * Fixed upgrade link display issue.
 * Fixed redirect issue after plugin activation, to remain on the plugin installer page instead of redirecting to the plugin settings page.
@@ -281,6 +287,5 @@ This section describes how to install the plugin and get it working.
 * Initial version released
 
 == Upgrade Notice ==
-#### 2.2.9
-* Fixed upgrade link display issue.
-* Fixed redirect issue after plugin activation, to remain on the plugin installer page instead of redirecting to the plugin settings page.
+#### 2.3.1
+* Fixed the issue of missing the meta key for the sample product.

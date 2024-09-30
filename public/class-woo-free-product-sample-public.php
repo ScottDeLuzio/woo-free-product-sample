@@ -317,23 +317,25 @@ class Woo_Free_Product_Sample_Public {
 	 * @since      2.0.0
 	 * @param      int, array
 	 */
-	public function wfps_save_posted_data_into_order( $itemID, $values ) {
+	public function wfps_save_posted_data_into_order( $itemID, $item, $order_id ) {
+
 		$custom_order_meta = apply_filters( 'wfps_custom_order_meta', false );
 
 		if ( false === $custom_order_meta ) {
-			if ( isset( $values['free_sample'] ) ) {
+
+			if ( isset( $item->legacy_values['free_sample'] ) ) {
 				$sample 		= __( 'Sample', 'woo-free-product-sample' );
 				if( get_locale() == 'de_DE' ){
 					wc_add_order_item_meta( $itemID, 'Produkt', 'MUSTERBESTELLUNG' );
 					wc_add_order_item_meta( $itemID, 'Preis', 'Wir übernehmen die Kosten für Sie!' );
 				} else {
 					wc_add_order_item_meta( $itemID, 'PRODUCT_TYPE', $sample );
-					wc_add_order_item_meta( $itemID, 'SAMPLE_PRICE', (float)$values["sample_price"] );
+					wc_add_order_item_meta( $itemID, 'SAMPLE_PRICE', (float)$item->legacy_values["sample_price"] );
 				}
 
 			}
 		} else {
-			do_action( 'wfps_custom_order_meta_action', $itemID, $values );
+			do_action( 'wfps_custom_order_meta_action', $itemID, $item, $order_id );
 		}
 
 	}
