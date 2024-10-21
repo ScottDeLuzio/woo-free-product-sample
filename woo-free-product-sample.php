@@ -8,7 +8,7 @@
  * Plugin Name:       Free Product Sample for WooCommerce
  * Plugin URI:        https://wordpress.org/plugins/woo-free-product-sample
  * Description:       It allows customers to order a product sample in a simple way.
- * Version:           2.3.1
+ * Version:           2.3.2
  * Author:            AMP-MODE
  * Author URI:        https://amplifyplugins.com
  * License:           GPL-2.0+
@@ -17,10 +17,10 @@
  * Domain Path:       /languages
  * Requires PHP:      5.6
  * Requires at least: 4.4
- * Tested up to:      6.2.2
+ * Tested up to:      6.6.1
  *
  * WC requires at least: 3.1
- * WC tested up to:   7.7.0
+ * WC tested up to:   9.2.3
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'WFPS_VERSION', '2.3.1' );
+define( 'WFPS_VERSION', '2.3.2' );
 define( 'WFPS_MINIMUM_PHP_VERSION', '5.6.0' );
 define( 'WFPS_MINIMUM_WP_VERSION', '4.4' );
 define( 'WFPS_MINIMUM_WC_VERSION', '3.1' );
@@ -45,6 +45,17 @@ define( 'WFPS_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'WFPS_PLUGIN_NAME', 'Free Product Sample for WooCommerce' );
 
 include WFPS_ROOT_DIR_PATH . 'includes/woo-free-product-sample-functions.php';
+
+/**
+ * Add HPOS support and compability
+ *
+ * @author Archie Mercader <achiles@modeeffect.com>
+ */
+add_action( 'before_woocommerce_init', function () {
+    if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+    }
+});
 
 /**
  * Free Product Sample for WooCommerce Start.
