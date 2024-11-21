@@ -175,6 +175,21 @@ class Woo_Free_Product_Sample_Start {
 		}
 	}
 
+    /**
+     * Determines if the HPOS feature is enabled in WooCommerce.
+     *
+     * @internal
+     *
+     * @since 2.0.0
+     */
+
+    private function wfps_is_hpos_enabled() {
+
+		$options = get_option( 'woocommerce_hpos_options' );
+		return isset( $options['enabled'] ) && $options['enabled'];
+
+    }
+
 	/**
 	 * Checks the environment on loading WordPress, just in case the environment changes after activation.
 	 *
@@ -190,6 +205,29 @@ class Woo_Free_Product_Sample_Start {
 
 			$this->add_admin_notice( 'bad_environment', 'error', WFPS_PLUGIN_NAME . ' has been deactivated. ' . $this->wfps_get_environment_message() );
 		}
+
+		/**
+		* Check WooCommerce version and HPOS feature status
+		*/
+        if ( ! $this->wfps_is_wc_compatible() && is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+
+            $this->add_admin_notice( 'update_woocommerce', 'error', sprintf(
+                '%1$s requires WooCommerce version %2$s or higher. Please update WooCommerce to the latest version.',
+                '<strong>' . WFPS_PLUGIN_NAME . '</strong>',
+                WFPS_MINIMUM_WC_VERSION
+            ) );
+
+        }
+
+		/**
+		* Check for High-Performance Order Storage (HPOS) feature
+		*/
+        if ( $this->wfps_is_hpos_enabled() ) {
+
+            $this->add_admin_notice( 'hpos_incompatibility', 'error', __( 'WooCommerce HPOS is enabled. This plugin may not be fully compatible.', 'woo-free-product-sample' ) );
+
+        }
+
 	}
 
 	/**
