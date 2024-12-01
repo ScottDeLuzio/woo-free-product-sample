@@ -114,6 +114,9 @@ This section describes how to install the plugin and get it working.
 5. Save/update product details
 
 == Changelog ==
+#### 2.3.2
+* Added HPOS support to the plugin
+
 #### 2.3.1
 * Fixed the issue of missing the meta key for the sample product.
 
